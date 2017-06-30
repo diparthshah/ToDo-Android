@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.diparth98.todo.MainActivity">
+
+    <ListView
+        android:id="@+id/list_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/addnew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@drawable/fab_add"
+            app:fab_colorNormal="#3F51B5"
+            app:fab_colorPressed="#3F51FF"
+            app:fab_size="normal"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label=""
+            app:fab_progress_indeterminate="true"
+            app:fab_progress_showBackground="false"
+            android:fitsSystemWindows="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

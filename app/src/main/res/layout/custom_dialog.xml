@@ -1,0 +1,54 @@
+<RelativeLayout
+    android:layout_height="160dp"
+    android:layout_width="280dp"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <EditText
+            android:id="@+id/TEXTTODO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addButtonTODO"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Add"
+            android:background="@drawable/rounded_button"
+            android:layout_alignBaseline="@+id/closeButtonTODO"
+            android:layout_alignBottom="@+id/closeButtonTODO"
+            android:layout_alignEnd="@+id/TEXTTODO" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/closeButtonTODO"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Cancel"
+            android:background="@drawable/rounded_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/TEXTTODO"
+            android:layout_marginBottom="14dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
